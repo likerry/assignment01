@@ -1,3 +1,60 @@
-body{
-  padding-top:50px;
+@import url('_cssReset.scss');
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+header {
+  nav {
+     .menu{
+      display: flex;
+      justify-content:center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 10px;
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+          padding:10px 20px;
+
+          &:hover {
+            color: #007BFF;
+            background-color: #f1d2d2;
+          }
+        }
+      }
+     }
+    }
+
+ .banner{
+   display: flex;
+   .banner-image{
+     width:50%;
+     img{
+      width: 100%;
+      height: auto;
+     }
+   }
+   .banner-content{
+    width: 50%;
+    .banner-content-text{}
+    }
+
+  }
+
+
+
+
+
+   }
+
+
+
+
+

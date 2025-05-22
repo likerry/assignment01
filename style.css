@@ -1,3 +1,40 @@
-body {
-  padding-top: 50px;
+@import url("_cssReset.scss");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav .menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .menu li {
+  margin: 0 10px;
+}
+header nav .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+header nav .menu li a:hover {
+  color: #007BFF;
+  background-color: #f1d2d2;
+}
+header .banner {
+  display: flex;
+}
+header .banner .banner-image {
+  width: 50%;
+}
+header .banner .banner-image img {
+  width: 100%;
+  height: auto;
+}
+header .banner .banner-content {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
