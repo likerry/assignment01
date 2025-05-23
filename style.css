@@ -37,4 +37,23 @@ header .banner .banner-image img {
 }
 header .banner .banner-content {
   width: 50%;
+}
+@media (max-width: 377px) {
+  .container {
+    padding: 0 10px;
+  }
+  header .banner {
+    flex-direction: column;
+    width: 100%;
+  }
+  header .banner .banner-image {
+    width: 100%;
+  }
+  header .banner .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+  header .banner .banner-content {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

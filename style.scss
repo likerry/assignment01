@@ -54,7 +54,30 @@ header {
 
    }
 
+@media(max-width: 377px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  header {
 
 
+  .banner {
+    flex-direction: column;
+    width: 100%;
+    .banner-image {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .banner-content {
+      width: 100%;
+    }
+  }
+}
+}
 
 
