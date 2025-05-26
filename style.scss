@@ -1,11 +1,22 @@
 @import url('_cssReset.scss');
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '微软雅黑', sans-serif;
+  list-style: none;
+  text-decoration: none;
 
+.container{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 5px;
+
+}
+.blue {
+  color: #0f2b87;
+}
 header {
   nav {
      .menu{
@@ -40,27 +51,41 @@ header {
       width: 100%;
       height: auto;
      }
+     margin-top: 15px;
    }
    .banner-content{
     width: 50%;
-    .banner-content-text{}
+    margin: auto 0;
+    padding-left:10px ;
+    .banner-content-text{
+      .text-title{
+        .text-title-index,.text-title-blog{
+          font-size: 4em;
+          font-weight: bold;
+
+        }
+
+      }
+     }
+     .text-description{
+      .text-description-list{
+        list-style: none;
+        display: flex;
+      }
+     }
     }
 
   }
 
 
-
-
-
    }
 
-@media(max-width: 377px) {
+@media(max-width: 450px) {
   .container {
     padding: 0 10px;
   }
 
   header {
-
 
   .banner {
     flex-direction: column;
@@ -79,5 +104,90 @@ header {
   }
 }
 }
+
+
+
+}
+.blog-main{
+  .blog-list{
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ec0a0a;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  .blog-content{
+    width:29%;
+    margin: 15px;
+    border: 1px solid #94e70e;
+    li{
+      margin-bottom: 10px;
+    }
+
+   .blog-content-img{
+     width: 100%;;
+    }
+
+   .publich-date{
+     font-size: 15px;
+    }
+
+   .block-button{
+     .blog-content-tag{
+       font-size: 18px;
+
+       &:hover{
+         color: #e4324a;
+         transition: all 0.5s;
+         font-size: 22px;
+        }
+      }
+
+     .blog-content-popu{
+        font-size: 18px;
+        background-color: blue;
+        color:white;
+        border: 1px solid #000;
+        border-radius: 20px;
+        padding: 5px 10px;
+        &:hover{
+          background-color: #cf4fbe;
+          color: #fff;
+          transition: all 0.5s;
+          font-size: 22px;
+        }
+      }
+   }
+
+  .blog-content-title{
+    font-size: 25px;
+    }
+
+  .blog-content-text{
+    font-size: 18px;
+    }
+
+  .block-button{
+
+      .blog-content-button{
+       font-size: 20px;
+       color: #000;
+       border: 1px solid #000;
+       border-radius: 20px;
+       padding: 5px 10px;
+
+       &:hover{
+         background-color: #4a47ec;
+         color: #fff;
+         transition: all 0.5s;
+         }
+       }
+    }
+ }
+}
+  }
 
 
