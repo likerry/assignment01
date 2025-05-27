@@ -1,5 +1,60 @@
 @charset "UTF-8";
-@import url("_cssReset.scss");
+/*@import 引用方式為檔案名稱(不加副檔名)*/
+/* 引入的檔案原始檔名前要加下底線 */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,78 +64,112 @@
   text-decoration: none;
 }
 * .container {
-  max-width: 1290px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 5px;
 }
 * .blue {
   color: #0f2b87;
 }
-* header nav .menu {
+* header {
+  margin-top: 15px;
+}
+* header .menu {
   display: flex;
   justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-* header nav .menu li {
+* header .menu li {
   margin: 0 10px;
 }
-* header nav .menu li a {
+* header .menu li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   padding: 10px 20px;
 }
-* header nav .menu li a:hover {
+* header .menu li a:hover {
   color: #007BFF;
   background-color: #f1d2d2;
 }
-* header .banner {
+* .banner {
+  background-image: url(images/index/Hero-Section2.png);
   display: flex;
 }
-* header .banner .banner-image {
+* .banner .banner-image {
   width: 50%;
   margin-top: 15px;
 }
-* header .banner .banner-image img {
+* .banner .banner-image img {
   width: 100%;
   height: auto;
 }
-* header .banner .banner-content {
+* .banner .banner-content {
   width: 50%;
   margin: auto 0;
   padding-left: 10px;
 }
-* header .banner .banner-content .banner-content-text .text-title .text-title-index, * header .banner .banner-content .banner-content-text .text-title .text-title-blog {
+* .banner .banner-content .banner-content-text .text-title {
+  padding-bottom: 1rem;
+}
+* .banner .banner-content .banner-content-text .text-title .text-title-index, * .banner .banner-content .banner-content-text .text-title .text-title-blog {
   font-size: 4em;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
-* header .banner .banner-content .text-description .text-description-list {
+* .banner .banner-content .text-description {
+  padding-bottom: 1rem;
+}
+* .banner .banner-content .text-description .text-description-list {
   list-style: none;
   display: flex;
 }
+
 @media (max-width: 450px) {
-  * .container {
+  .container {
     padding: 0 10px;
   }
-  * header .banner {
+  header .banner {
     flex-direction: column;
     width: 100%;
   }
-  * header .banner .banner-image {
+  header .banner .banner-image {
     width: 100%;
   }
-  * header .banner .banner-image img {
+  header .banner .banner-image img {
     width: 100%;
     height: auto;
   }
-  * header .banner .banner-content {
+  header .banner .banner-content {
     width: 100%;
   }
 }
-
-.blog-main .blog-list {
+.index-main .index-main-service {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ec0a0a;
+  box-sizing: border-box;
+}
+.index-main .index-main-service .index-main-service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-main .index-main-service .index-main-service-list .index-main-service-image {
+  width: 50%;
+}
+.index-main .index-main-service .index-main-service-list .index-main-service-image img {
+  width: 100%;
+  height: auto;
+}
+.index-main .index-main-service .index-main-service-list .index-main-service-text {
+  width: 50%;
+}
+.index-main .index-main-service .index-main-service-list .index-main-service-text .index-main-service-text-mark {
+  border-bottom: #007BFF 2px solid;
+}
+.index-main .index-main-blog {
   width: 1000px;
   margin: 0 auto;
   border: 1px solid #ec0a0a;
@@ -91,8 +180,61 @@
   justify-content: space-between;
   margin-bottom: 15px;
 }
+.index-main .index-main-exam {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ec0a0a;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.blog-main .blog-serch {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ec0a0a;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+}
+.blog-main .blog-serch .blog-serch-input {
+  width: 70%;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.blog-main .blog-serch .blog-serch-button {
+  width: 20%;
+  height: 30px;
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.blog-main .blog-serch .blog-serch-button:hover {
+  background-color: #0056b3;
+  transition: all 0.3s ease-in-out;
+}
+.blog-main .blog-list {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ec0a0a;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
 .blog-main .blog-list .blog-content {
-  width: 29%;
+  width: 30.1%;
   margin: 15px;
   border: 1px solid #94e70e;
 }
@@ -144,4 +286,26 @@
   background-color: #4a47ec;
   color: #fff;
   transition: all 0.5s;
+}
+.blog-main .blog-pagination {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ec0a0a;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+.blog-main .blog-pagination .pagination-button {
+  margin: 0 5px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+.blog-main .blog-pagination .pagination-button:hover {
+  background-color: #20c4e9;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
