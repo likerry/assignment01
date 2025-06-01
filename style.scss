@@ -9,6 +9,7 @@
   font-family: '微软雅黑', sans-serif;
   list-style: none;
   text-decoration: none;
+  /*outline: 1px solid red;*/
 
  .container{
   max-width: 1300px;
@@ -16,7 +17,7 @@
   padding: 0 5px;
 
  }
-.blue {
+ .blue {
   color: #0f2b87;
  }
  .index-main-title{
@@ -47,7 +48,7 @@
         }
       }
      }
-    }
+  }
 
  .banner{
   background-image: url(images/index/Hero-Section2.png);
@@ -58,7 +59,7 @@
       width: 100%;
       height: auto;
      }
-     margin-top: 15px;
+     margin-top: 1px;
    }
    .banner-content{
 
@@ -99,7 +100,7 @@
   }
 
 
- }
+}
 
  @media(max-width: 450px) {
   .container {
@@ -130,8 +131,10 @@
   .index-main-service{
     width: 1000px;
     margin: 0 auto;
+    background-color: #eee9e9;
+    /* 測試對齊線
     border: 1px solid #ec0a0a;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
     .index-main-service-list{
       display: flex;
       flex-wrap: wrap;
@@ -166,26 +169,30 @@
   .index-main-blog{
     width: 1000px;
     margin: 0 auto;
-    border: 1px solid #ec0a0a;
+    background-color: #f0f0e1;
+    /*測試對齊線
+    border: 1px solid #ec0a0a; */
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     .blog-list{
       width: 1000px;
       margin: 0 auto;
+      /*測試對齊線
       border: 1px solid #ec0a0a;
-      box-sizing: border-box;
-      margin-top: 20px;
+      box-sizing: border-box;*/
+      margin-top: 5px;
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
      .blog-content{
        width:30.1%;
        margin: 15px;
-       border: 1px solid #94e70e;
+        /*測試對齊線
+       border: 1px solid #94e70e;*/
        li{
          margin-bottom: 10px;
        }
@@ -250,30 +257,75 @@
           }
        }
      }
+
+
+
+
     }
+
+    .blog-pre-next{
+      width: 100%;
+      margin-top:10px ;
+      margin-bottom: 10px;
+      position: relative;
+      bottom: 200px;
+
+        .blog-arraw-button{
+
+          display:flex;
+          justify-content: space-between;
+          .blog-list-arraw{
+             font-size: 22px;
+             background-color: rgba(12, 12, 208,0.6);
+             color:rgb(203, 194, 194);
+             border: 1px solid #000;
+             border-radius: 20px;
+             padding: 5px 10px;
+             &:hover{
+               background-color:rgba(223, 204, 179,0.6);
+               color: #211f1f;
+               transition: all 0.5s;
+               font-size: 24px;
+             }
+           }
+        }
+
+       }
+
+
+
+
+
+
+
+
+
 
   }
   .index-main-case{
     width: 1000px;
     margin: 0 auto;
+    background-color: #e2f4ec;
+    /*測試對齊線
     border: 1px solid #ec0a0a;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
 }
 
-.index-footer{}
+
 
 .blog-main{
   .blog-newbar{
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
+
    .blog-newbar-img{
     width: 50%;
     img{
@@ -281,7 +333,7 @@
       height: auto;
     }
    }
-  .blog-newbar-text{
+   .blog-newbar-text{
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -352,8 +404,9 @@
   .blog-serch{
     width: 1000px;
     margin: 0 auto;
+    /*測試對齊線
     border: 1px solid #ec0a0a;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
     margin-top: 20px;
     display: flex;
 
@@ -388,8 +441,10 @@
   .blog-list{
    width: 1000px;
    margin: 0 auto;
+   background-color: #fae8e8;
+    /*測試對齊線
    border: 1px solid #ec0a0a;
-   box-sizing: border-box;
+   box-sizing: border-box;*/
    margin-top: 20px;
    display: flex;
    flex-wrap: wrap;
@@ -397,7 +452,8 @@
   .blog-content{
     width:30.1%;
     margin: 15px;
-    border: 1px solid #94e70e;
+    /*測試對齊線
+    border: 1px solid #94e70e;*/
     li{
       margin-bottom: 10px;
     }
@@ -467,8 +523,9 @@
   .blog-pagination{
     width: 1000px;
     margin: 0 auto;
+    /*測試對齊線
     border: 1px solid #ec0a0a;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
     margin-top: 20px;
 
     display: flex;
@@ -562,49 +619,113 @@
     font-size: 18px;
     }
 
-  .block-button{
 
-      .blog-content-button{
-       font-size: 20px;
-       color: #000;
-       border: 1px solid #000;
-       border-radius: 20px;
-       padding: 5px 10px;
-
-       &:hover{
-         background-color: #4a47ec;
-         color: #fff;
-         transition: all 0.5s;
-         }
-       }
-    }
   }
 }
 
 
-
-
-
-
-
-.blogcontent-main{
-width: 1000px;
+.blogcontent-main{                                                             
+  width: 1000px;
   margin: 0 auto;
+  /*測試對齊線
   border: 1px solid #ec0a0a;
-  box-sizing: border-box;
+  box-sizing: border-box;*/
 
 
-.blog-content-article{
+ .blog-content-article{
+  background-color: #f3f5ed;
+  .article-style-h2{
+    font-size:36px ;
+    font-weight: bold;
+    color:blue;
+    padding: 10px ;
+   }
+
+
+  .article-style-h3{
+    font-size:28px ;
+
+    color:rgb(128, 128, 241);
+    padding: 10px ;
+   }
+
+  .article-style-p{
+    font-size:20px ;
+
+    color:black;
+    padding: 10px ;
+    line-height: 1.2rem;
+   }
+   .article-style-img{
+    width: 70%;
+    height: auto;
+    margin: 10px 0;
+   }
+
+   .article-style-ol{
+    font-size:20px ;
+    color:black;
+    padding: 10px ;
+    line-height: 1.2rem;
+    li{
+     list-style: decimal;}
+     padding-left: 35px;
+   }
+
+   .article-style-ul{
+    font-size:20px ;
+    color:black;
+    padding: 10px ;
+    line-height: 1.2rem;
+    li{
+     list-style: disc ;}
+     padding-left: 35px;
+   }
+
+
+   .tip{
+    background-color: #c093f1;
+    width: 80%;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 9999px;
+   }
+
+  }
+
+ .pre-next{
+ margin-top:10px ;
+ margin-bottom: 10px;
+  .arraw-button{
+    display:flex;
+    justify-content: space-around;
+    .blog-content-arraw{
+       font-size: 22px;
+       background-color: blue;
+       color:white;
+       border: 1px solid #000;
+       border-radius: 20px;
+       padding: 5px 10px;
+       &:hover{
+         background-color: #eabee4;
+         color: #fff;
+         transition: all 0.5s;
+         font-size: 24px;
+       }
+     }
+  }
 
  }
 }
 
 
-.blog-footer,.blogcontent-footer{
+.index-footer,.blog-footer,.blogcontent-footer{
   width: 1000px;
   margin: 0 auto;
+  background-color: #f8f3f3;
+  /*測試對齊線
   border: 1px solid #ec0a0a;
-  box-sizing: border-box;
+  box-sizing: border-box;*/
   margin-top: 10px;
   padding: 10px;
 
